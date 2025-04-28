@@ -4,22 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phân Tích Dãy Số</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Phân Tích Dãy Số</h1>
+        <h1><i class="fas fa-dice"></i> Phân Tích Dãy Số <i class="fas fa-dice"></i></h1>
         
         <div class="input-section">
-            <p>Nhập một hoặc nhiều dãy số (phân cách bằng dấu phẩy):</p>
-            <textarea id="numberInput" placeholder="Ví dụ: 83882758, 38287"></textarea>
-            <button id="analyzeBtn">Phân Tích</button>
+            <p><i class="fas fa-keyboard"></i> Nhập một hoặc nhiều dãy số (phân cách bằng dấu phẩy):</p>
+            <textarea id="numberInput" placeholder="Ví dụ: 5883, 8867, 0013"></textarea>
+            <div class="buttons">
+                <button id="analyzeBtn"><i class="fas fa-chart-line"></i> Phân Tích</button>
+                <button id="filterBtn"><i class="fas fa-filter"></i> Lọc</button>
+            </div>
         </div>
         
         <div class="results-section" id="resultsSection">
-            <h2>Kết Quả:</h2>
+            <h2><i class="fas fa-trophy"></i> Kết Quả</h2>
             <div id="results"></div>
             <div id="finalResult"></div>
+            <div id="filteredResults" class="filtered-results">
+                <div id="uniqueNumbers"></div>
+                <div id="duplicateNumbers"></div>
+            </div>
         </div>
     </div>
     
